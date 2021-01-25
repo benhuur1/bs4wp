@@ -2,10 +2,10 @@
 
 <div class='blog-comments'>
 
-    <?php if(have_comments() && comments_open()) ?>
+    <?php if( have_comments() && comments_open()) : ?>
 
         <h5 id='comments' class='mb-3'>
-            <?php comments_number(__('comentários'), __('1 comentário'), '%' . __(' comentários') ) ?>
+            <?php comments_number(__('comentários'), __('1 comentário'), '%' . __(' comentários') ); ?>
         </h5>
 
     <?php endif; ?>
