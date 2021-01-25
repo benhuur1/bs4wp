@@ -53,6 +53,11 @@ register_sidebar(
 		'after_title' => '</h5><div class="card-body">',
 	));
 
+// Ativar o formulário para respostas nos comentários
+function theme_queue_js(){
+	if( (!is_admin()) && is_singular() && comments_open() && get_option('thread_comments')) wp_enqueue_script('comment-reply');
+} 
 
+add_action( 'wp_print_scripts', 'theme_queue_js');
 
 ?>
