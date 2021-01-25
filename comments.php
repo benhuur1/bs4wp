@@ -33,7 +33,7 @@
 			'<label class="control-label" for="email">' . __("Seu e-mail") . '</label>' .
 			($req ? '<span>*</span>' : '').
 			'<input class="form-control" id="email" name="email" type="text" value="'.
-			esc_attr( $commenter['comment_author_email'] ) .'" ' . $aria_req . ' /></div></div></div>,
+			esc_attr( $commenter['comment_author_email'] ) .'" ' . $aria_req . ' /></div></div></div>',
 			)),
 
 			'comment_field' => '<p>' .
