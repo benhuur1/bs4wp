@@ -26,15 +26,8 @@
 			</div>
 
 			<div class="col-md-4 col-sm-12">
-				<form>
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="O que procura?">
-						<div class="input-group-append">
-							<button class="btn btn-my-color-5">Buscar</button>
-						</div>
-					</div>
-				</form>
-
+				<!-- adiciona o formulário de buscas -->
+				<?php dynamic_sidebar('busca'); ?>
 			</div>
 
 		</div>
@@ -46,13 +39,13 @@
 
 				<nav class="navbar navbar-expand-lg navbar-dark bg-my-color-2 rounded" role="navigation">
 
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 					
-						<?php
-						wp_nav_menu( array(
+					<?php
+					wp_nav_menu( array(
 						'theme_location'    => 'principal',
 						'depth'             => 2,
 						'container'         => 'div',
@@ -61,9 +54,9 @@
 						'menu_class'        => 'nav navbar-nav',
 						'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 						'walker'            => new WP_Bootstrap_Navwalker(),
-						) );
-						?>
-				
+					) );
+					?>
+
 				</nav>
 
 			</div>
