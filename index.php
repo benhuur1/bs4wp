@@ -7,7 +7,7 @@
 
 		<?php endwhile; ?>
 
-		<?php else: get_404_ztemplate(); endif;?>
+		<?php else: get_404_template(); endif;?>
 
 		<div class="blog-pagination mb-5">
 			<?php next_posts_link('Mais antigos'); ?> <?php previous_posts_link('Mais novos'); ?>

@@ -100,8 +100,12 @@ function format_comment($comment, $args, $depth){
 				</div>
 			</div>
 		</div>
-<?php
-}
+		<?php
+	}
+
+//Incluir as funções de personalização
+	require get_template_directory(). '/inc/customizer.php';
+
 
 
 
