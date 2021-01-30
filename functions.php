@@ -8,6 +8,9 @@ function bs4wp_theme_support() {
 
 	//adicionar os formatos de posts
 	add_theme_support('post-formats', array('aside', 'image'));
+
+	//adicionar o logotipo
+	add_theme_support('custom-logo');
 }
 
 add_action( 'after_setup_theme', 'bs4wp_theme_support');

@@ -1,6 +1,7 @@
 <?php 
 
 function bs4wp_customize_register($wp_customize){
+	
 //Rodapé
 	$wp_customize -> add_section('footer', array(
 		'title' => __('Rodape', 'BS 4 + WP'),
@@ -10,27 +11,25 @@ function bs4wp_customize_register($wp_customize){
 
 	$wp_customize -> add_setting('footer_title', array(
 		'default' => _x('Meu primeiro tema de wordpress', 'BS 4 + WP'),
-		'type' => 'teme_mod'
+		'type' => 'theme_mod'
 	));
 
-	$wp_customize -> add_control('footer_title', array(
+	$wp_customize -> add_control('footer_title',array(
 		'label' => __('Titulo do rodapé', 'BS 4 + WP'),
 		'section' => 'footer',
-		'priority' =>  1
+		'priority' => 1
 	));
 
 		$wp_customize -> add_setting('footer_text', array(
 		'default' => _x('Feito por mim com muita dedicação e esforço', 'BS 4 + WP'),
-		'type' => 'teme_mod'
+		'type' => 'theme_mod'
 	));
 
 	$wp_customize -> add_control('footer_text', array(
-		'label' => __('Testo do rodapé', 'BS 4 + WP'),
+		'label' => __('Texto do rodapé', 'BS 4 + WP'),
 		'section' => 'footer',
 		'priority' =>  2
 	));
 }
 
 add_action( 'customize_register', 'bs4wp_customize_register' );
-
-?>

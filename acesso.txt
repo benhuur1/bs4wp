@@ -1,2 +1,18 @@
 login: jose
 senha: bs4wp
+
+sugestões de plugins
+
+jetpack
+
+contact form 7
+
+bootstrap for contact form 7
+
+flamingo
+
+instagram feed
+
+mailChimp for WordPress
+
+YoAst SEO
