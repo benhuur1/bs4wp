@@ -1,4 +1,4 @@
-<div class="col-md-4 col-sm-12">
+<div class="col-md-3 col-sm-12">
 	
 	<?php
 //adiciona a barra lateral
