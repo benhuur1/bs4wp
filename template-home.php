@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php 
+
+/*Template Name: Home Page*/
+
+ ?>
+
+ <?php get_header(); ?>
 
 <style>
 	.object-fit-cover

@@ -14,9 +14,9 @@
 
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
-	<div class="container">
+	<div class="container-fluid">
 
 		<div class="row my-5 align-items-center">
 
